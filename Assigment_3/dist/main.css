@@ -6,18 +6,12 @@
 /* Create a 2x2 grid for the other images */
 /* Style for the counter cards */
 /* Style for the second type of card (card2) */
-/* Reset margins and padding for unordered lists and body */
-body,
-ul {
-  margin-left: 20px;
-  padding: 0;
-}
-
-/* Hide horizontal scrollbar for the entire body */
-body {
-  overflow-x: hidden;
-}
-
+/* Style for the table container */
+/* Style for the table row */
+/* Style for the button in the last column */
+/* Style for the 2nd column (Price) */
+/* Style for list items */
+/* Style for sub-lists */
 .navbar {
   position: fixed;
   top: 0;
@@ -27,13 +21,6 @@ body {
   z-index: 100;
   /* Adjust the z-index to ensure it's above other content */
   background: white;
-}
-
-/* Style for the main container */
-.container {
-  display: flex;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 
 .menu-bar {
@@ -91,11 +78,6 @@ body {
   border-bottom-color: rgb(155, 211, 187);
 }
 
-/* Style for the main body */
-.mainbody {
-  background-color: rgb(250, 251, 252); /* Set the background color for the main body */
-}
-
 /* Descendant selector for ul.horizontal-list */
 ul.horizontal-list {
   list-style-type: none;
@@ -118,7 +100,8 @@ ul.horizontal-list > li > a {
   /* Adjust the spacing between list items */
   font-size: medium;
   /* Change font size to medium */
-  color: rgb(224, 90, 90); /* Red color with full opacity */
+  color: rgb(224, 90, 90);
+  /* Red color with full opacity */
   /* Remove underline from links */
   text-decoration: none;
 }
@@ -133,176 +116,248 @@ ul.horizontal-list > li > a {
 
 /* Descendant selector for the additional text */
 h1 .additional-text {
-  font-size: medium; /* Change font size to medium */
-  margin-left: 20px; /* Adjust the left margin as needed */
+  font-size: medium;
+  /* Change font size to medium */
+  margin-left: 20px;
+  /* Adjust the left margin as needed */
   color: rgb(224, 90, 90);
 }
 
 /* Style for the additional-text2 class */
 .additional-text2 {
-  font-size: xx-large; /* Set the font size for additional-text2 */
-  margin-left: 450px; /* Adjust the left margin as needed */
-  color: rgb(224, 90, 90); /* Red color with full opacity */
+  font-size: xx-large;
+  /* Set the font size for additional-text2 */
+  margin-left: 450px;
+  /* Adjust the left margin as needed */
+  color: rgb(224, 90, 90);
+  /* Red color with full opacity */
 }
 
 /* Style for the .night class inside .additional-text2 */
 .additional-text2 > .night {
-  font-size: small; /* Set the font size for .night inside .additional-text2 */
+  font-size: small;
+  /* Set the font size for .night inside .additional-text2 */
 }
 
 /* Style for the rating */
 .rating {
-  background-color: white; /* Set background color for the rating container */
-  border: 1px solid rgb(155, 211, 187); /* Add a border with color */
-  padding: 15px 15px; /* Set padding for the rating container */
-  height: fit-content; /* Allow the container to adjust its height based on content */
+  background-color: white;
+  /* Set background color for the rating container */
+  border: 1px solid rgb(155, 211, 187);
+  /* Add a border with color */
+  padding: 15px 15px;
+  /* Set padding for the rating container */
+  height: fit-content;
+  /* Allow the container to adjust its height based on content */
 }
 
 /* Style for the content before the reviews section */
 .container > .reviews::before {
-  content: "Very Good  "; /* Set content before the reviews section */
-  font-weight: bold; /* Set font weight for the content */
-  padding: 5px; /* Set padding for the content */
+  content: "Very Good  ";
+  /* Set content before the reviews section */
+  font-weight: bold;
+  /* Set font weight for the content */
+  padding: 5px;
+  /* Set padding for the content */
 }
 
 /* Style for the button section */
 .button-section {
-  margin-left: auto; /* Move the button section to the right */
-  display: flex; /* Use flex display for the button section */
-  align-items: center; /* Center align items vertically */
+  margin-left: auto;
+  /* Move the button section to the right */
+  display: flex;
+  /* Use flex display for the button section */
+  align-items: center;
+  /* Center align items vertically */
 }
 
 /* Style for buttons within the button section */
 .button-section > button {
-  margin-right: 10px; /* Set right margin for buttons */
+  margin-right: 10px;
+  /* Set right margin for buttons */
 }
 
 /* Style for the image rating */
 .imageRating {
-  width: fit-content; /* Adjust width based on content */
-  height: auto; /* Automatically adjust height */
+  width: fit-content;
+  /* Adjust width based on content */
+  height: auto;
+  /* Automatically adjust height */
 }
 
 /* Style for the "Book Now" button */
 .bookButton {
-  background-color: rgb(155, 211, 187); /* Set background color */
-  border: 1px solid rgb(155, 211, 187); /* Add a border */
-  padding: 20px 30px; /* Set padding for the button */
+  background-color: rgb(155, 211, 187);
+  /* Set background color */
+  border: 1px solid rgb(155, 211, 187);
+  /* Add a border */
+  padding: 20px 30px;
+  /* Set padding for the button */
   cursor: pointer;
 }
 
 /* Remove margin and padding from images within imageGrid */
 .imageGrid {
-  padding: 0px; /* Reset padding */
-  flex: 1; /* Allow flexibility within the container */
-  display: grid; /* Use grid display */
-  grid-template-columns: repeat(2, 1fr); /* Define a 2x2 grid layout */
-  gap: 0px; /* Remove gap between grid items */
+  padding: 0px;
+  /* Reset padding */
+  flex: 1;
+  /* Allow flexibility within the container */
+  display: grid;
+  /* Use grid display */
+  grid-template-columns: repeat(2, 1fr);
+  /* Define a 2x2 grid layout */
+  gap: 0px;
+  /* Remove gap between grid items */
   position: relative;
 }
 
 /* Style for image containers within imageGrid */
 .image-container > img {
-  width: 100%; /* Set image width to 100% */
-  height: 100%; /* Set image height to 100% */
-  margin: 0px; /* Reset margin */
+  width: 100%;
+  /* Set image width to 100% */
+  height: 100%;
+  /* Set image height to 100% */
+  margin: 0px;
+  /* Reset margin */
 }
 
 /* Style for the first image within imageGrid */
 .imageGrid > .first-image > img {
-  height: 100%; /* Set height for the first image */
-  margin-left: 20px; /* Set left margin for the first image */
+  height: 100%;
+  /* Set height for the first image */
+  margin-left: 20px;
+  /* Set left margin for the first image */
 }
 
 /* Create a 2x2 grid for the other images */
 .other-images {
-  display: grid; /* Use grid display */
-  grid-template-columns: 1fr 1fr; /* Define a 2x2 grid layout */
-  grid-gap: 0; /* Remove gap between grid items */
+  display: grid;
+  /* Use grid display */
+  grid-template-columns: 1fr 1fr;
+  /* Define a 2x2 grid layout */
+  grid-gap: 0;
+  /* Remove gap between grid items */
 }
 
 /* Reset margin and padding for all elements within imageGrid, figure, and img */
 .imageGrid,
 figure,
 img {
-  margin: 3px; /* Reset margin */
-  padding: 0; /* Reset padding */
+  margin: 3px;
+  /* Reset margin */
+  padding: 0;
+  /* Reset padding */
 }
 
 /* Style for h4 followed by an article element */
 h4 + article {
-  justify-content: left; /* Adjust content justification as needed */
+  justify-content: left;
+  /* Adjust content justification as needed */
 }
 
 /* Style for the overview section */
 .overview {
-  margin-right: 20px; /* Set right margin for the overview section */
-  margin-left: 20px; /* Set left margin for the overview section */
+  margin-right: 20px;
+  /* Set right margin for the overview section */
+  margin-left: 20px;
+  /* Set left margin for the overview section */
 }
 
 /* Remove extra left and right margins, due to padding, for the .row element */
 .row {
-  margin: 0 0px; /* Reset margin to remove extra left and right margins */
+  margin: 0 0px;
+  /* Reset margin to remove extra left and right margins */
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: ""; /* Create a pseudo-element to clear floats */
-  display: table; /* Set display property to table to clear floats */
-  clear: both; /* Clear both left and right floats */
+  content: "";
+  /* Create a pseudo-element to clear floats */
+  display: table;
+  /* Set display property to table to clear floats */
+  clear: both;
+  /* Clear both left and right floats */
 }
 
 /* Responsive columns for screens with a maximum width of 600px */
 @media screen and (max-width: 600px) {
   .column {
-    width: 20%; /* Set width for columns on smaller screens */
-    display: flex; /* Use flex display for columns */
-    margin-bottom: 20px; /* Adjust bottom margin as needed */
+    width: 20%;
+    /* Set width for columns on smaller screens */
+    display: flex;
+    /* Use flex display for columns */
+    margin-bottom: 20px;
+    /* Adjust bottom margin as needed */
   }
 }
 /* Style for the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add box shadow for a card effect */
-  padding: 12px; /* Set padding for the card */
-  text-align: left; /* Set text alignment to left */
-  background-color: rgb(155, 211, 187); /* Set background color */
-  border-radius: 10px; /* Add rounded corners with border-radius */
-  width: 70%; /* Set the width of the card */
-  margin-left: 20px; /* Set left margin for the card */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Add box shadow for a card effect */
+  padding: 12px;
+  /* Set padding for the card */
+  text-align: left;
+  /* Set text alignment to left */
+  background-color: rgb(155, 211, 187);
+  /* Set background color */
+  border-radius: 10px;
+  /* Add rounded corners with border-radius */
+  width: 70%;
+  /* Set the width of the card */
+  margin-left: 20px;
+  /* Set left margin for the card */
 }
 
 /* Style for the second type of card (card2) */
 .card2 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add box shadow for a card effect */
-  padding: 10px; /* Set padding for the card */
-  text-align: left; /* Set text alignment to left */
-  background-color: white; /* Set background color to white */
-  border-radius: 10px; /* Add rounded corners with border-radius */
-  width: 70%; /* Set the width of the card */
-  border-style: solid; /* Add a solid border */
-  border-color: rgb(155, 211, 187); /* Set border color */
-  border-width: 1px; /* Set border width */
-  margin-left: 20px; /* Set left margin for the card */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Add box shadow for a card effect */
+  padding: 10px;
+  /* Set padding for the card */
+  text-align: left;
+  /* Set text alignment to left */
+  background-color: white;
+  /* Set background color to white */
+  border-radius: 10px;
+  /* Add rounded corners with border-radius */
+  width: 70%;
+  /* Set the width of the card */
+  border-style: solid;
+  /* Add a solid border */
+  border-color: rgb(155, 211, 187);
+  /* Set border color */
+  border-width: 1px;
+  /* Set border width */
+  margin-left: 20px;
+  /* Set left margin for the card */
 }
 
 /* Float four columns side by side */
 .column {
-  float: left; /* Float columns to the left */
-  width: 12%; /* Set width for columns */
-  height: 20%; /* Set height for columns */
+  float: left;
+  /* Float columns to the left */
+  width: 12%;
+  /* Set width for columns */
+  height: 20%;
+  /* Set height for columns */
 }
 
 /* Style for the content before the card in a row */
 .row > .column > .card::before {
-  content: "4.2 "; /* Set content before the card */
-  font-weight: bold; /* Set font weight for the content */
-  font-size: xx-large; /* Set font size for the content */
+  content: "4.2 ";
+  /* Set content before the card */
+  font-weight: bold;
+  /* Set font weight for the content */
+  font-size: xx-large;
+  /* Set font size for the content */
 }
 
 /* Style for images within card2 */
 .card2 > img {
-  margin-left: 0px; /* Set left margin for images within card2 */
-  width: 30%; /* Set width for images within card2 */
+  margin-left: 0px;
+  /* Set left margin for images within card2 */
+  width: 30%;
+  /* Set width for images within card2 */
 }
 
 .overlay-button {
@@ -322,53 +377,89 @@ h4 + article {
   /* margin-bottom: 2440px; */
 }
 
+/* Reset margins and padding for unordered lists and body */
+body,
+ul {
+  margin-left: 20px;
+  padding: 0;
+}
+
+/* Hide horizontal scrollbar for the entire body */
+body {
+  overflow-x: hidden;
+}
+
+/* Style for the main container */
+.container {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Style for the main body */
+.mainbody {
+  background-color: rgb(250, 251, 252);
+  /* Set the background color for the main body */
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /* Style for the table container */
 .table-container {
-  display: flex; /* Use flex display for the table container */
-  flex-direction: column; /* Set the direction to column */
-  margin-left: 20px; /* Set left margin for the table container */
-  margin-right: 20px; /* Set right margin for the table container */
+  display: flex;
+  /* Use flex display for the table container */
+  flex-direction: column;
+  /* Set the direction to column */
+  margin-left: 20px;
+  /* Set left margin for the table container */
+  margin-right: 20px;
+  /* Set right margin for the table container */
 }
 
 /* Style for the table row */
 .table-row {
-  display: flex; /* Use flex display for table rows */
-  justify-content: space-between; /* Distribute space between elements */
-  align-items: center; /* Align items vertically at the center */
-  border-bottom: 1px solid #ccc; /* Add a bottom border for rows */
-  padding: 10px; /* Set padding for rows */
+  display: flex;
+  /* Use flex display for table rows */
+  justify-content: space-between;
+  /* Distribute space between elements */
+  align-items: center;
+  /* Align items vertically at the center */
+  border-bottom: 1px solid #ccc;
+  /* Add a bottom border for rows */
+  padding: 10px;
+  /* Set padding for rows */
 }
 
 /* Style for table columns */
 .table-column {
   flex: 1; /* Use flex property for table columns */
-  padding: 10px; /* Set padding for table columns */
+  padding: calc(20px - 10px); /* Set padding for table columns */
 }
 
 /* Style for the 2nd column (Price) */
 .table-column2 {
-  flex: 1; /* Use flex property for table columns */
-  padding: 10px; /* Set padding for table columns */
-  margin-right: -940px; /* Push it to the right side (adjust as needed) */
+  flex: 1;
+  /* Use flex property for table columns */
+  padding: 10px;
+  /* Set padding for table columns */
+  margin-right: -940px;
+  /* Push it to the right side (adjust as needed) */
 }
 
 /* Style for images within table rows */
 .table-row > img {
-  width: 40px; /* Set width for images */
-  height: 35px; /* Set height for images */
-}
-
-/* Style for the button in the last column */
-.button-cell {
-  display: flex; /* Use flex display for button cells */
-  align-items: center; /* Align items vertically at the center */
-  justify-content: flex-end; /* Align button to the right */
+  width: calc(20px + 20px); /* Set width for images */
+  height: calc(20px + 15px); /* Set height for images */
 }
 
 /* Style for pseudo-elements before paragraphs */
 p::before {
   content: attr(data-before); /* Set content before paragraphs */
-  font-size: x-large; /* Set font size for the pseudo-element */
+  font-size: large; /* Set font size for the pseudo-element */
 }
 
 /* Style for the 2nd column (Price) paragraphs */
@@ -392,113 +483,208 @@ p::before {
 iframe {
   margin-left: 20px; /* Set left margin for iframes */
   margin-right: 20px; /* Set right margin for iframes */
-  border: 0; /* Remove borders from iframes */
-  width: 96%; /* Set width for iframes */
+  border: 0px; /* Remove borders from iframes */
+  width: calc(100% - 40px); /* Set width for iframes */
   height: 450px; /* Set height for iframes */
 }
 
-/* Style for the two-column list */
-ul.two-column-list {
-  list-style-type: none; /* Remove list item bullets */
-  display: grid; /* Use grid display for the list */
-  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-  gap: 1px; /* Set gap between grid items */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
-}
-
-/* Style for amenities section */
-.amenties {
-  margin-left: 20px; /* Set left margin for amenities section */
-}
-
-/* Style for list items within the amenities section */
-.amenties > ul > li {
-  margin-left: 10px; /* Set left margin for list items */
+.item-1 {
   display: flex;
-  margin-top: 0px;
-  padding: 0px;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
 }
 
-/* Style for list items within the amenities section */
-.amenties > ul > li > img {
-  margin-left: 10px; /* Set left margin for list items */
-  position: relative;
-  padding: 5px;
+.item-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
 }
 
-/* Style for links within the amenities section */
-.amenties > ul > li > a {
-  color: red; /* Set text color to red */
-  text-decoration: none; /* Remove text underline */
+.item-3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
 }
 
-/* Style for the review section */
+.item-4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.item-5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.item-6 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.item-7 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.item-8 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.item-9 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.item-10 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Add space between items */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+/* Usage Example */
+.amenities {
+  margin-left: 20px;
+  /* Set left margin for amenities section */
+}
+
+.column-container {
+  column-count: 2;
+  /* Set the number of columns */
+  column-gap: 20px;
+  /* Define the gap between columns */
+}
+
+.red-text {
+  color: red;
+}
+
+/* Usage Example */
 .reviewsection {
-  margin-left: 20px; /* Set left margin for the review section */
-  display: flex; /* Use flex display for the review section */
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
 }
 
-/* Style for the review heading */
 .container > .review {
-  font-weight: bold; /* Set font weight to bold */
-  font-size: 44px; /* Set font size for the review heading */
+  font-weight: bold;
+  font-size: 44px;
 }
 
-/* Style for the second review section */
 .container > .review2 {
-  margin-top: 10px; /* Set top margin for the second review section */
+  margin-top: calc(20px - 10px);
 }
 
-/* Style for the "Book Now" button within the review section */
 .reviewsection > .bookButton {
-  margin-left: 1110px; /* Push it to the right side (adjust as needed) */
+  margin-left: 1130px;
 }
 
-/* Style for the comment section */
 .commentSection {
-  margin-left: 20px; /* Set left margin for the comment section */
-  margin-right: 20px; /* Set right margin for the comment section */
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-/* Style for paragraphs within the comment section */
 .commentSection > p {
-  margin-top: -60px; /* Set negative top margin for paragraphs */
+  margin-top: -60px;
+  text-align: left;
 }
 
-/* Style for images within paragraphs */
 .commentSection > p > img {
-  margin-left: 0px; /* Set left margin for images */
-  width: 40px; /* Set width for images */
-  height: 50px; /* Set height for images */
-  margin-top: 40px; /* Set top margin for images */
+  margin-left: 0;
+  width: 40px;
+  height: 50px;
+  margin-top: 40px;
 }
 
-/* Style for the "flag" class within paragraphs */
 .commentSection > p > .flag {
-  margin-left: 1020px; /* Push it to the right side (adjust as needed) */
+  margin-left: 1040px;
 }
 
-/* Style for paragraphs within the comment section */
-.commentSection > p {
-  text-align: left; /* Align text to the left */
+.paging {
+  margin-left: 600px;
 }
 
-/* Style for spans within the overlap1 section */
+.overlap1 > span {
+  margin-left: 5px;
+}
+
+/* Usage Example */
+.mailbox {
+  width: 25%;
+  height: 250%;
+  margin-left: 890px;
+  margin-top: -164px;
+  margin-bottom: 80px;
+}
+
 .overlap1 > p > span {
-  margin-left: 0px; /* Set left margin for spans */
-  font-size: x-large; /* Set font size for spans */
+  margin-left: 0;
+  font-size: x-large;
 }
 
 .form {
   margin-left: 10px;
 }
-
 .form > form > input {
   height: 25px;
   width: 400px;
 }
-
 .form > form > .subscribe {
   height: 25px;
   width: 100px;
@@ -513,11 +699,6 @@ ul.two-column-list {
   height: 30%;
   position: absolute;
   background-color: rgb(209, 235, 226);
-  top: 3600px;
-}
-
-.overlap1 > span {
-  margin-left: 5px;
 }
 
 .overlap2 {
@@ -538,7 +719,7 @@ ul.two-column-list {
 
 .footerlink {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 /* Style for the list container */
@@ -585,46 +766,6 @@ ul.two-column-list {
 
 .list-container > .list-item > .sub-list > li > img {
   width: 100px;
-}
-
-.mailbox {
-  width: 25%;
-  height: 250%;
-  margin-left: 890px;
-  margin-top: -164px;
-  margin-bottom: 80px;
-}
-
-hr {
-  border: 1px solid #ccc;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.paging {
-  margin-left: 600px;
-}
-
-.column-container {
-  column-count: 2; /* Set the number of columns */
-  column-gap: 20px; /* Define the gap between columns */
-}
-
-/* Style for each item */
-.amenities-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px; /* Add space between items */
-}
-
-.red-color {
-  color: red;
-}
-
-/* Style for the image */
-.amenities-container img {
-  max-width: 20px; /* Set the maximum width of the image */
-  margin-right: 10px; /* Add space between the image and text */
 }
 
 /*# sourceMappingURL=main.css.map */

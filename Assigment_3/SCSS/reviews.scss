@@ -1,0 +1,47 @@
+
+// Define a function for calculating margin-left
+@function calculate-margin-left($left-margin, $adjustment) {
+    @return $left-margin + $adjustment;
+}
+
+/* Usage Example */
+.reviewsection {
+    @include common-margin;
+    display: $display-flex;
+}
+
+.container > .review {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-review;
+}
+
+.container > .review2 {
+    margin-top: calc(#{$margin-common} - 10px); 
+}
+
+.reviewsection > .bookButton {
+    @include book-button(calculate-margin-left(1110px, $margin-common));
+}
+
+.commentSection {
+    @include common-margin;
+}
+
+.commentSection > p {
+    margin-top: -60px;
+    text-align: $text-align-left;
+}
+
+.commentSection > p > img {
+    @include image-styles;
+}
+
+.commentSection > p > .flag {
+    @include flag-class(calculate-margin-left(1020px, $margin-common));
+}
+
+
+.paging
+{
+    margin-left:600px;
+}

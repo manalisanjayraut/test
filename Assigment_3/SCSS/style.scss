@@ -1,81 +1,62 @@
-/* Reset margins and padding for unordered lists and body */
-body,
-ul {
-    margin-left: 20px;
-    padding: 0;
-}
-
-/* Hide horizontal scrollbar for the entire body */
-body {
-    overflow-x: hidden;
-}
 
 .navbar {
-   @include navbar;
-}
-
-/* Style for the main container */
-.container {
-   @include container;
+    @include navbar;
 }
 
 // Style for the menu bar
 .menu-bar {
-   @include menu-bar;
-  }
+    @include menu-bar;
+}
 
-  // Style for the menu items within the container
-  .container > .menu > li > a {
+// Style for the menu items within the container
+.container>.menu>li>a {
     @include menu-link;
     color: $black;
-  }
-  
-  // Style for the logo
-  .logo {
+}
+
+// Style for the logo
+.logo {
     text-align: $text-align-center;
     flex-grow: 1;
-  }
-  
-  // Style for the logo image
-  .logo img {
+}
+
+// Style for the logo image
+.logo img {
     @include logo-image;
-  }
-  
-  // Style the header images
-  .container > ul.menu > li > a > img.headerImg {
+}
+
+// Style the header images
+.container>ul.menu>li>a>img.headerImg {
     max-width: 28px;
     vertical-align: middle;
     margin-right: 5px;
-  }
-  
-  // Add padding to the right menu items
-  .container > ul.menu > li:last-child {
-    @include menu-item;
-  }
-  
-  // Add padding to the left menu items
-  .container > ul.menu > li {
-    @include menu-item;
-  }
-  
-  // Style for menu item links
-  .container > ul.menu > li > a {
-    @include menu-link;
-  }
-  
-  // Style for menu item links on hover
-  .container > ul.menu > li.pageLink > a:hover {
-    border-bottom-color: $green;
-  }
-/* Style for the main body */
-.mainbody {
-    background-color: $main-background-color; /* Set the background color for the main body */
 }
+
+// Add padding to the right menu items
+.container>ul.menu>li:last-child {
+    @include menu-item;
+}
+
+// Add padding to the left menu items
+.container>ul.menu>li {
+    @include menu-item;
+}
+
+// Style for menu item links
+.container>ul.menu>li>a {
+    @include menu-link;
+}
+
+// Style for menu item links on hover
+.container>ul.menu>li.pageLink>a:hover {
+    border-bottom-color: $green;
+}
+
 
 
 /* Descendant selector for ul.horizontal-list */
 ul.horizontal-list {
-   @include ul-horizontal-list;
+    @include ul-horizontal-list;
 }
 
 /* Add a "greater than" symbol before each list item except the first one */
@@ -86,101 +67,114 @@ ul.horizontal-list li+li:before {
 }
 
 /* Child selector to target li elements within ul.horizontal-list */
-ul.horizontal-list > li > a {
+ul.horizontal-list>li>a {
     margin-right: $margin-common;
     /* Adjust the spacing between list items */
     font-size: $font-size-medium;
     /* Change font size to medium */
-    color: $red-color-light ; /* Red color with full opacity */
+    color: $red-color-light ;
+    /* Red color with full opacity */
     /* Remove underline from links */
     text-decoration: $text-decoration-none;
 }
 
 /* Style for the star rating */
 .star-rating {
-   @include star-rating;
+    @include star-rating;
 }
 
 /* Descendant selector for the additional text */
 h1 .additional-text {
-   @include additional-text;
+    @include additional-text;
 }
 
 /* Style for the additional-text2 class */
 .additional-text2 {
-   @include additional-text2;
+    @include additional-text2;
 }
 
 /* Style for the .night class inside .additional-text2 */
-.additional-text2 > .night {
-    font-size: $font-size-small; /* Set the font size for .night inside .additional-text2 */
+.additional-text2>.night {
+    font-size: $font-size-small;
+    /* Set the font size for .night inside .additional-text2 */
 }
 
 /* Style for the rating */
 .rating {
-   @include rating;
+    @include rating;
 }
 
 /* Style for the content before the reviews section */
-.container > .reviews::before {
-    content: "Very Good  "; /* Set content before the reviews section */
-    font-weight: $font-weight-bold; /* Set font weight for the content */
-    padding: 5px; /* Set padding for the content */
+.container>.reviews::before {
+    content: "Very Good  ";
+    /* Set content before the reviews section */
+    font-weight: $font-weight-bold;
+    /* Set font weight for the content */
+    padding: 5px;
+    /* Set padding for the content */
 }
 
 /* Style for the button section */
 .button-section {
-   @include button-section;
+    @include button-section;
 }
 
 /* Style for buttons within the button section */
-.button-section > button {
-    margin-right: 10px; /* Set right margin for buttons */
+.button-section>button {
+    margin-right: 10px;
+    /* Set right margin for buttons */
 }
 
 /* Style for the image rating */
 .imageRating {
-    width: $fit-content; /* Adjust width based on content */
-    height: $auto; /* Automatically adjust height */
+    width: $fit-content;
+    /* Adjust width based on content */
+    height: $auto;
+    /* Automatically adjust height */
 }
 
 /* Style for the "Book Now" button */
 .bookButton {
-   @include bookButton;
+    @include bookButton;
 }
 
 /* Remove margin and padding from images within imageGrid */
 .imageGrid {
-   @include imageGrid;
+    @include imageGrid;
 }
 
 /* Style for image containers within imageGrid */
-.image-container > img {
-   @include imagecontainer-image;
+.image-container>img {
+    @include imagecontainer-image;
 }
 
 /* Style for the first image within imageGrid */
-.imageGrid > .first-image > img {
-    height: $percentage-100; /* Set height for the first image */
-    margin-left: $margin-common; /* Set left margin for the first image */
+.imageGrid>.first-image>img {
+    height: $percentage-100;
+    /* Set height for the first image */
+    margin-left: $margin-common;
+    /* Set left margin for the first image */
 }
 
 /* Create a 2x2 grid for the other images */
 .other-images {
-  @include other-images;   
+    @include other-images;
 }
 
 /* Reset margin and padding for all elements within imageGrid, figure, and img */
 .imageGrid,
 figure,
 img {
-    margin: 3px; /* Reset margin */
-    padding: 0; /* Reset padding */
+    margin: 3px;
+    /* Reset margin */
+    padding: 0;
+    /* Reset padding */
 }
 
 /* Style for h4 followed by an article element */
-h4 + article {
-    justify-content: left; /* Adjust content justification as needed */
+h4+article {
+    justify-content: left;
+    /* Adjust content justification as needed */
 }
 
 /* Style for the overview section */
@@ -190,22 +184,29 @@ h4 + article {
 
 /* Remove extra left and right margins, due to padding, for the .row element */
 .row {
-    margin: 0 0px; /* Reset margin to remove extra left and right margins */
+    margin: 0 0px;
+    /* Reset margin to remove extra left and right margins */
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: ""; /* Create a pseudo-element to clear floats */
-    display: $display-table; /* Set display property to table to clear floats */
-    clear: both; /* Clear both left and right floats */
+    content: "";
+    /* Create a pseudo-element to clear floats */
+    display: $display-table;
+    /* Set display property to table to clear floats */
+    clear: both;
+    /* Clear both left and right floats */
 }
 
 /* Responsive columns for screens with a maximum width of 600px */
 @media screen and (max-width: 600px) {
     .column {
-        width: 20%; /* Set width for columns on smaller screens */
-        display: $display-flex; /* Use flex display for columns */
-        margin-bottom: $margin-common; /* Adjust bottom margin as needed */
+        width: 20%;
+        /* Set width for columns on smaller screens */
+        display: $display-flex;
+        /* Use flex display for columns */
+        margin-bottom: $margin-common;
+        /* Adjust bottom margin as needed */
     }
 }
 
@@ -217,357 +218,37 @@ h4 + article {
 
 /* Style for the second type of card (card2) */
 .card2 {
-   @include card2;
+    @include card2;
 }
 
 /* Float four columns side by side */
 .column {
-    float: left; /* Float columns to the left */
-    width: 12%; /* Set width for columns */
-    height: 20%; /* Set height for columns */
+    float: left;
+    /* Float columns to the left */
+    width: 12%;
+    /* Set width for columns */
+    height: 20%;
+    /* Set height for columns */
 }
 
 /* Style for the content before the card in a row */
-.row > .column > .card::before {
-    content: "4.2 "; /* Set content before the card */
-    font-weight: $font-weight-bold; /* Set font weight for the content */
-    font-size: $font-size-xx-large; /* Set font size for the content */
+.row>.column>.card::before {
+    content: "4.2 ";
+    /* Set content before the card */
+    font-weight: $font-weight-bold;
+    /* Set font weight for the content */
+    font-size: $font-size-xx-large;
+    /* Set font size for the content */
 }
 
 /* Style for images within card2 */
-.card2 > img {
-    margin-left: $zero-pixel; /* Set left margin for images within card2 */
-    width: 30%; /* Set width for images within card2 */
+.card2>img {
+    margin-left: $zero-pixel;
+    /* Set left margin for images within card2 */
+    width: 30%;
+    /* Set width for images within card2 */
 }
+
 .overlay-button {
-   @include overlay-button;
-}
-/* Style for the table container */
-.table-container {
-    display: flex; /* Use flex display for the table container */
-    flex-direction: column; /* Set the direction to column */
-    margin-left: 20px; /* Set left margin for the table container */
-    margin-right: 20px; /* Set right margin for the table container */
-}
-
-/* Style for the table row */
-.table-row {
-    display: flex; /* Use flex display for table rows */
-    justify-content: space-between; /* Distribute space between elements */
-    align-items: center; /* Align items vertically at the center */
-    border-bottom: 1px solid #ccc; /* Add a bottom border for rows */
-    padding: 10px; /* Set padding for rows */
-}
-
-/* Style for table columns */
-.table-column {
-    flex: 1; /* Use flex property for table columns */
-    padding: 10px; /* Set padding for table columns */
-}
-
-/* Style for the 2nd column (Price) */
-.table-column2 {
-    flex: 1; /* Use flex property for table columns */
-    padding: 10px; /* Set padding for table columns */
-    margin-right: -940px; /* Push it to the right side (adjust as needed) */
-}
-
-/* Style for images within table rows */
-.table-row > img {
-    width: 40px; /* Set width for images */
-    height: 35px; /* Set height for images */
-}
-
-/* Style for the button in the last column */
-.button-cell {
-    display: flex; /* Use flex display for button cells */
-    align-items: center; /* Align items vertically at the center */
-    justify-content: flex-end; /* Align button to the right */
-}
-
-/* Style for pseudo-elements before paragraphs */
-p::before {
-    content: attr(data-before); /* Set content before paragraphs */
-    font-size: x-large; /* Set font size for the pseudo-element */
-}
-
-/* Style for the 2nd column (Price) paragraphs */
-.table-column2 > p {
-    font-weight: bold; /* Set font weight for the paragraphs */
-}
-
-/* Style for the location section */
-.location {
-    margin-left: 20px; /* Set left margin for the location section */
-    margin-right: 20px; /* Set right margin for the location section */
-    display: flex; /* Use flex display for the location section */
-}
-
-/* Style for the "Book Now" button within the location section */
-.location > .bookButton {
-    margin-left: 1020px; /* Push it to the right side (adjust as needed) */
-}
-
-/* Style for iframes */
-iframe {
-    margin-left: 20px; /* Set left margin for iframes */
-    margin-right: 20px; /* Set right margin for iframes */
-    border: 0; /* Remove borders from iframes */
-    width: 96%; /* Set width for iframes */
-    height: 450px; /* Set height for iframes */
-}
-
-/* Style for the two-column list */
-ul.two-column-list {
-    list-style-type: none; /* Remove list item bullets */
-    display: grid; /* Use grid display for the list */
-    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-    gap: 1px; /* Set gap between grid items */
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
-}
-
-/* Style for amenities section */
-.amenties {
-    margin-left: 20px; /* Set left margin for amenities section */
-}
-
-/* Style for list items within the amenities section */
-.amenties > ul > li {
-    margin-left: 10px; /* Set left margin for list items */
-    display: flex;
-    margin-top: 0px;  
-    padding: 0px;
-   
-}
-
-/* Style for list items within the amenities section */
-.amenties > ul > li > img{
-    margin-left: 10px; /* Set left margin for list items */
-   position: relative;
-   padding: 5px;
-   
-}
-
-
-/* Style for links within the amenities section */
-.amenties > ul > li > a {
-    color: red; /* Set text color to red */
-    text-decoration: none; /* Remove text underline */
-}
-
-/* Style for the review section */
-.reviewsection {
-    margin-left: 20px; /* Set left margin for the review section */
-    display: flex; /* Use flex display for the review section */
-}
-
-/* Style for the review heading */
-.container > .review {
-    font-weight: bold; /* Set font weight to bold */
-    font-size: 44px; /* Set font size for the review heading */
-}
-
-/* Style for the second review section */
-.container > .review2 {
-    margin-top: 10px; /* Set top margin for the second review section */
-}
-
-/* Style for the "Book Now" button within the review section */
-.reviewsection > .bookButton {
-    margin-left: 1110px; /* Push it to the right side (adjust as needed) */
-}
-
-/* Style for the comment section */
-.commentSection {
-    margin-left: 20px; /* Set left margin for the comment section */
-    margin-right: 20px; /* Set right margin for the comment section */
-}
-
-/* Style for paragraphs within the comment section */
-.commentSection > p {
-    margin-top: -60px; /* Set negative top margin for paragraphs */
-}
-
-/* Style for images within paragraphs */
-.commentSection > p > img {
-    margin-left: 0px; /* Set left margin for images */
-    width: 40px; /* Set width for images */
-    height: 50px; /* Set height for images */
-    margin-top: 40px; /* Set top margin for images */
-}
-
-/* Style for the "flag" class within paragraphs */
-.commentSection > p > .flag {
-    margin-left: 1020px; /* Push it to the right side (adjust as needed) */
-}
-
-/* Style for paragraphs within the comment section */
-.commentSection > p {
-    text-align: left; /* Align text to the left */
-}
-
-/* Style for spans within the overlap1 section */
-.overlap1 > p > span {
-    margin-left: 0px; /* Set left margin for spans */
-    font-size: x-large; /* Set font size for spans */
-}
-
-
-.form
-{
-    margin-left: 10px;    
-}
-
-.form > form > input{
-    height: 25px;width:400px;
-}
-
-.form > form > .subscribe{
-    height: 25px;width:100px;
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-}
-
-.overlap1 {
-    z-index: 2;
-    left: 80px;
-    width: 90%;
-    height: 30%;
-    position: absolute;
-    background-color:rgba(209,235,226,255);
-    top: 3600px;
-
-}
-
-.overlap1 > span{
-    margin-left: 5px;
-}
-
-.overlap2 {
-    z-index: 1;
-    position: relative;
-    left: 10px;
-}
-
-.listbottom {
-    font-size: small;
-    font-weight: 10;
-}
-
-.listheader {
-    font-size: medium;
-    font-weight: 100;
-}
-
-
-.footerlink {
-    text-decoration: none;
-    color: black;
-}
-
-
-       
-
-/* Style for the list container */
-.list-container {
-    list-style: none;
-    /* Remove default list styling */
-    padding: 0;
-    /* Remove default padding */
-}
-
-/* Style for list items */
-.list-item {
-    margin-top: -130px;
-    display: inline-block;
-    /* Display list items horizontally */
-    margin-right: 60px;
-    /* Add spacing between list items */
-    vertical-align: top;
-    /* Align list items to the top */
-    margin-left: 30px;
-}
-
-/* Style for sub-lists */
-.sub-list {
-    /* Use a different list marker */
-    /* Reset margin to avoid extra spacing */
-    padding: 0;
-    /* Reset padding */
-    display: inline-block;
-    ;
-    /* Display sub-list items horizontally */
-    vertical-align: top;
-    /* Align sub-list items to the top */
-    list-style-type: unset;
-}
-
-.appsList{
-    display: flex; list-style: none;
-}
-
-.list-container > .list-item > .sub-list > li > ul > li{
-    display: inline-block;
-}
-
-.list-container > .list-item > .sub-list > li > img
-{
-    width:100px;
-}
-
-.mailbox{
-width:25%;
-height:250%;
-margin-left: 890px;
-margin-top: -164px;
-margin-bottom: 80px;
-
-}
-
-
-hr{
-border: 1px solid #ccc; 
-margin-left: 20px;
-margin-right: 20px;
-}
-
-
-.paging
-{
-    margin-left:600px;
-}
-
-.column-container {
-
-    column-count: 2; /* Set the number of columns */
-
-    column-gap: 20px; /* Define the gap between columns */
-
-}
-/* Style for each item */
-
-.amenities-container {
-
-    display: flex;
-
-    align-items: center;
-
-    margin-bottom: 10px; /* Add space between items */
-
-}
-
-.red-color {
-color: red;
-}
-
-
-/* Style for the image */
-
-.amenities-container img {
-
-    max-width: 20px; /* Set the maximum width of the image */
-
-    margin-right: 10px; /* Add space between the image and text */
-
+    @include overlay-button;
 }
