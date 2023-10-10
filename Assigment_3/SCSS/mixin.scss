@@ -1,0 +1,189 @@
+// Define a mixin for removing default link underline
+@mixin no-link-underline {
+    text-decoration: none;
+}
+
+// Define a mixin for menu items
+@mixin menu-item {
+    display: inline-block;
+    margin-right: $menu-item-margin;
+    padding: $menu-item-padding;
+}
+
+// Define a mixin for menu item links
+@mixin menu-link {
+    @include no-link-underline;
+    border-bottom: 3px solid $menu-item-border-color;
+    transition: border-bottom-color 0.4s;
+}
+
+// Define a mixin for the logo image
+@mixin logo-image {
+    max-width: 100%;
+    max-height: 4vh;
+    height: auto;
+}
+
+//Define  a mixin for the container
+
+@mixin container {
+    display: $display-flex;
+    margin-right: $margin-common;
+    margin-left: $margin-common;
+
+}
+
+@mixin navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Make it span the full width of the viewport */
+    z-index: 100;
+    /* Adjust the z-index to ensure it's above other content */
+    background: $white;
+}
+
+@mixin text-align-center {
+    text-align: center;
+}
+
+@mixin text-align-left {
+    text-align: left;
+}
+
+// Style for the menu bar
+@mixin menu-bar {
+    background-color: $white;
+    display: $display-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $menu-padding;
+    color: $black;
+}
+
+@mixin ul-horizontal-list {
+    list-style-type: $list-style-nond;
+    margin: $zero-pixel;
+    padding: $zero-pixel;
+    display: $display-flex;
+    /* Use flexbox to create a horizontal layout */
+}
+
+
+@mixin star-rating {
+    color: $red-color-light;
+    /* Red color with full opacity */
+    font-size: 24px;
+    /* Set the font size for star ratings */
+}
+
+@mixin additional-text{
+    font-size: medium; /* Change font size to medium */
+    margin-left: $margin-common; /* Adjust the left margin as needed */
+    color: $red-color-light  /* Red color with full opacity */
+}
+
+/* Style for the additional-text2 class */
+@mixin additional-text2 {
+    font-size: $font-size-xx-large; /* Set the font size for additional-text2 */
+    margin-left: 450px; /* Adjust the left margin as needed */
+    color: rgba(224, 90, 90, 1);  /* Red color with full opacity */
+}
+
+/* Style for the rating */
+@mixin rating {
+    background-color: $white; /* Set background color for the rating container */
+    border: 1px solid  $green; /* Add a border with color */
+    padding: 15px 15px; /* Set padding for the rating container */
+    height: fit-content; /* Allow the container to adjust its height based on content */
+}
+
+@mixin button-section {
+    margin-left: $auto; /* Move the button section to the right */
+    display: $display-flex; /* Use flex display for the button section */
+    align-items: $text-align-center; /* Center align items vertically */
+}
+
+/* Style for the "Book Now" button */
+@mixin bookButton {
+    background-color: $green; /* Set background color */
+    border: 1px solid $green; /* Add a border */
+    padding: 20px 30px; /* Set padding for the button */
+    cursor: pointer;
+}
+
+
+/* Style for the overview section */
+@mixin overview {
+    margin-right: $margin-common; /* Set right margin for the overview section */
+    margin-left: $margin-common; /* Set left margin for the overview section */
+}
+
+
+@mixin imageGrid {
+    padding: $zero-pixel; /* Reset padding */
+    flex: 1; /* Allow flexibility within the container */
+    display: $display-grid; /* Use grid display */
+    grid-template-columns: repeat(2, 1fr); /* Define a 2x2 grid layout */
+    gap: $zero-pixel; /* Remove gap between grid items */
+    position: $position-relative;
+}
+
+@mixin imagecontainer-image{
+    width: $percentage-100;/* Set image width to 100% */
+    height: $percentage-100; /* Set image height to 100% */
+    margin: $zero-pixel; /* Reset margin */
+}
+
+
+/* Create a 2x2 grid for the other images */
+@mixin other-images {
+    display: $display-grid; /* Use grid display */
+    grid-template-columns: 1fr 1fr; /* Define a 2x2 grid layout */
+    grid-gap: 0; /* Remove gap between grid items */
+}
+
+ /* Style for the counter cards */
+@mixin card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add box shadow for a card effect */
+    padding: 12px; /* Set padding for the card */
+    text-align: $text-align-left; /* Set text alignment to left */
+    background-color: $green; /* Set background color */
+    border-radius: $borer-raduis-10px; /* Add rounded corners with border-radius */
+    width: 70%; /* Set the width of the card */
+    margin-left: $margin-common; /* Set left margin for the card */
+}
+
+
+/* Style for the second type of card (card2) */
+@mixin card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add box shadow for a card effect */
+    padding: 10px; /* Set padding for the card */
+    text-align: $text-align-left; /* Set text alignment to left */
+    background-color: $white; /* Set background color to white */
+    border-radius: $borer-raduis-10px; /* Add rounded corners with border-radius */
+    width: 70%; /* Set the width of the card */
+    border-style: solid; /* Add a solid border */
+    border-color: $green; /* Set border color */
+    border-width: 1px; /* Set border width */
+    margin-left: $margin-common; /* Set left margin for the card */
+}
+
+
+@mixin overlay-button {
+    position: $position-absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $green;
+    color: $black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $borer-raduis-5px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 550px;
+    margin-top: 70px;
+    /* margin-bottom: 2440px; */
+}
