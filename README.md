@@ -2,17 +2,13 @@
  <img width="98" alt="image" src="https://github.com/manalisanjayraut/test/assets/144759989/0c6f6906-b23f-49d1-b964-5a5ca9d53755">
 </p>
 
-<h2 align="left">Table of Contents</h2>
+### Table of Contents
 
-<p align="left">
  • [Overview](#overview) <br/>
  • [Features](#features) <br/>
  • [Tech Stack](#tech-stack) <br/>
- • [Getting Started](#getting-started) <br/>
- • [API Documentation](#api-documentation) <br/>
- • [Contributing](#contributing) <br/>
- • [License](#license)
-</p>
+ • [Getting Started](#getting-started) 
+
 
 ## Overview
 Welcome to CareerNest, your go-to platform for revolutionizing the job search and hiring experience. CareerNest is more than just a job portal; it's a dynamic ecosystem that seamlessly connects candidates with their dream job opportunities while providing recruiters with powerful tools for efficient talent acquisition.
