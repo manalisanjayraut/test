@@ -2,8 +2,6 @@
  <img width="98" alt="image" src="https://github.com/manalisanjayraut/test/assets/144759989/0c6f6906-b23f-49d1-b964-5a5ca9d53755">
 </p>
 
-<h1 align="left">Career Nest Job Portal</h1>
-
 <h2 align="left">Table of Contents</h2>
 
 <p align="left">
