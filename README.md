@@ -1,56 +1,59 @@
 <p align="center">
  <img width="98" alt="image" src="https://github.com/manalisanjayraut/test/assets/144759989/0c6f6906-b23f-49d1-b964-5a5ca9d53755">
-
 </p>
 
+<h1 align="left">Career Nest Job Portal</h1>
 
-<h2 align="center">Table of Contents</h2>
+<h2 align="left">Table of Contents</h2>
 
-<p align="center">
-  <a href="#overview">Overview</a> •
-  <a href="#features">Features</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#api-documentation">API Documentation</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#license">License</a>
+<p align="left">
+ • [Overview](#overview) <br/>
+ • [Features](#features) <br/>
+ • [Tech Stack](#tech-stack) <br/>
+ • [Getting Started](#getting-started) <br/>
+ • [API Documentation](#api-documentation) <br/>
+ • [Contributing](#contributing) <br/>
+ • [License](#license)
 </p>
 
 ## Overview
-CareerNest is a platform that connects candidates with job opportunities, providing a seamless experience for both candidates and recruiters.
+Welcome to CareerNest, your go-to platform for revolutionizing the job search and hiring experience. CareerNest is more than just a job portal; it's a dynamic ecosystem that seamlessly connects candidates with their dream job opportunities while providing recruiters with powerful tools for efficient talent acquisition.
+
+In CareerNest, we prioritize user experience, transparency, and empowerment. Whether you're a candidate searching for your next career move or a recruiter looking to find the perfect match for your team, CareerNest has you covered.
 
 ## Features
 ### User Authentication:
-Candidates can create accounts, log in, and manage their profiles. Recruiters can also log in and post jobs.
+Candidates can effortlessly create accounts, log in, and proficiently manage their profiles. Recruiters also have the ability to log in and post jobs with ease.
 
 ### Job Search: 
-Candidates can search for jobs based on job descriptions, salary, and experience.
+Candidates enjoy a streamlined job search experience, allowing them to search for opportunities based on comprehensive job descriptions, competitive salaries, and relevant experience levels.
 
 ### Application Process: 
-Candidates can apply for jobs through the platform. Candidates can retrieve the list of job applications that they applied. 
-Also, you can view specific Retrieve details of a specific job application. Candidates can also change the status of the application from interview to finalized or rejected, etc. He can also withdraw a job application.
+Candidates can apply for jobs through the platform, with an intuitive process that enables them to retrieve the list of their job applications. Additionally, candidates can view specific details of each application, manage application statuses, and even withdraw applications if needed.
 
 ### Job Posting:
-Recruiters can post job opportunities.
+Recruiters can efficiently post job opportunities, ensuring a seamless and user-friendly process.
 
 ### Job Management: 
-Recruiters can update job descriptions and track applied candidates.
+Recruiters have the capability to update job descriptions in real-time and easily track the progress of applied candidates.
 
 ### Candidate Profile: 
-Recruiters can view detailed profiles of candidates who have applied.
+Recruiters gain valuable insights by accessing detailed profiles of candidates who have applied, enhancing the recruitment process.
 
 ### Application Status: 
-Candidates can manage the status of their job applications.
+Candidates can actively manage the status of their job applications, providing transparency and control over their job search journey.
 
 ### Skill Matching: 
-Candidates can see job opportunities that match their skills.
+Candidates benefit from a feature that enables them to discover job opportunities that align with their unique skill set, facilitating more meaningful job matches.
 
 ## Tech Stack
-- MongoDB
-- Node.js
-- React
-- HTML
-- CSS
+| Technology | Description          |
+|------------|----------------------|
+| MongoDB    | NoSQL database       |
+| Node.js    | JavaScript runtime   |
+| React      | JavaScript library   |
+| HTML       | Markup language      |
+| CSS        | Styling language     |
 
 ## Getting Started
 ### Prerequisites
@@ -62,4 +65,3 @@ Ensure you have the following installed:
 1. Clone the CareerNest repository.
    ```bash
    git clone https://github.com/your-username/CareerNest.git
-
