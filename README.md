@@ -1,6 +1,5 @@
 <p align="center">
   <img width="197" alt="image" src="https://github.com/manalisanjayraut/test/assets/144759989/16c1795e-fbb3-43fc-a47a-ec2fbf3ac89a">
-" alt="CareerNest Logo" width="200">
 </p>
 
 <h1 align="center">CareerNest</h1>
