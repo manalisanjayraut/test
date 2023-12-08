@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "final-project-mind-benders",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r  <img width=\"98\" alt=\"image\" src=\"https://github.com/manalisanjayraut/test/assets/144759989/0c6f6906-b23f-49d1-b964-5a5ca9d53755\">\r </p>",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Sai Geeta Acharya",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/material": "^5.14.20",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "formik": "^2.4.5",
+    "mongoose": "^8.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "yup": "^1.3.2"
+  }
+}
